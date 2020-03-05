@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shopping", "shopping\shopping.vcxproj", "{35D5D005-9DBA-4FE3-AEB2-14BA3E7B8010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D5D005-9DBA-4FE3-AEB2-14BA3E7B8010}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35D5D005-9DBA-4FE3-AEB2-14BA3E7B8010}.Debug|Win32.Build.0 = Debug|Win32
+		{35D5D005-9DBA-4FE3-AEB2-14BA3E7B8010}.Release|Win32.ActiveCfg = Release|Win32
+		{35D5D005-9DBA-4FE3-AEB2-14BA3E7B8010}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E39E3AA2-F445-416F-8E47-121BAB481C59}
+	EndGlobalSection
+EndGlobal
