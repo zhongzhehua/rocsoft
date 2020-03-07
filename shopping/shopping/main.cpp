@@ -15,7 +15,6 @@ dailyuse *da[MAX_GOODS];
 appliances *ap[MAX_GOODS];
 user *us[MAX_USERS];
 vip *vi[MAX_USERS];
-class err{};			//用于抛出错误的类
 void loading();			//载入函数
 void login();			//登录函数
 void shop();			//购物函数
@@ -40,6 +39,7 @@ void loading()
 	string tmpStr("");
 	string tmpf[MAX_GOODS];
 	nfood=0;
+	foodFile.open("./food.txt",ios::in);
 	while(getline(foodFile,tmpStr))
 	{
 		tmpf[nfood]=tmpStr;
@@ -59,6 +59,7 @@ void loading()
 	ifstream dailyFile;
 	string tmpd[MAX_GOODS];
 	ndaily=0;
+	dailyFile.open("./dailyuse.txt",ios::in);
 	while(getline(dailyFile,tmpStr))
 	{
 		tmpd[ndaily]=tmpStr;
@@ -78,6 +79,7 @@ void loading()
 	ifstream appFile;
 	string tmpa[MAX_GOODS];
 	napp=0;
+	appFile.open("./appliances.txt",ios::in);
 	while(getline(appFile,tmpStr))
 	{
 		tmpa[napp]=tmpStr;
@@ -97,6 +99,7 @@ void loading()
 	ifstream userFile;
 	string tmpu[MAX_USERS];
 	nuser=0;
+	userFile.open("./user.txt",ios::in);
 	while(getline(userFile,tmpStr))
 	{
 		tmpf[nuser]=tmpStr;
@@ -115,6 +118,7 @@ void loading()
 	ifstream vipFile;
 	string tmpv[MAX_USERS];
 	nvip=0;
+	vipFile.open("./vip.txt",ios::in);
 	while(getline(vipFile,tmpStr))
 	{
 		tmpf[nvip]=tmpStr;
